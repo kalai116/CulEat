@@ -1,0 +1,183 @@
+<!Doctype HTML>
+
+<html lang="en">
+	<head> 
+		<title> Culinary Eatery </title>
+		<link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="foodss.css">
+		<link rel="stylesheet" href="CE.js">
+		<link rel="bootstrap" href="bootstrap.css">
+		<link rel="bootstrapbundle" href="bootstrap.bundle.js">
+		<meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+	</head>
+	<body>
+
+		<div class = "logo">
+			<a href="index.html">
+				<img src="food logo.jpeg" alt="logo">
+			</a>
+			</div>
+
+		<h1> Culinary Eatery </h1>
+		<h2> Indulge in the Art of Fresh, Flavourful Cuisine </h2>
+
+		<hr class="CE">
+
+		<p1> 
+			<ul class="nav">
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link Home" aria-current="page" href="index.html"> Home </a>
+						</div>
+					</nav>
+				</li>
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="IndianCuisine.html">Indian Cuisine</a>
+						</div>
+					</nav>
+				</li>
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="IndianDessert.html">Indian Dessert</a>
+						</div>
+					</nav>
+				</li>
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="KenyaCuisine.html">Kenyan Cuisine</a>
+						</div>
+					</nav>
+				</li>	
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="AboutUs.html">About Us</a>
+						</div>
+					</nav>
+				</li>
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="OrderNow.html">Order Now</a>
+						</div>
+					</nav>
+				</li>
+			</ul>
+		</p1>
+
+
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+    <!--  Mukimo -->
+    <div class="col image-itemG">
+      <img src="MukimoG.jpeg" alt="Mukimo" onclick="toggleDescription('desc2')">
+      <div class="captionG fw-bold mt-2">Mukimo</div>
+      <div id="desc2" class="description-boxG text-primary">
+       Mukimo is  prepared by mashing potatoes and green vegetables with a few  maize and beans being added unsmashed .
+		Mukimo is mostly served as an accompaniment for meat-based stew and nyama choma.
+      </div>
+    </div>
+	
+    <!-- Ugali Fry -->
+    <div class="col image-itemG">
+        <img src="ugali beef.jpg" alt="Ugali with Beef" onclick="toggleDescription('desc3')">
+      <div class="captionG fw-bold mt-2">Ugali Fry</div>
+	  <div id="desc3" class="description-boxG text-success">
+	  A traditional meat dish from Kenya, and can be made with goat meat, beef, or lamb.
+			It is best to barbecue the goat meat at medium to low temperatures.
+    </div>
+	</div>
+	
+	
+	 <!-- Chapati -->
+    <div class="col image-itemG">
+      <img src="chapati.jpg" alt="Chapati" onclick="toggleDescription('desc1')">
+      <div class="captionG fw-bold mt-2">Chapati</div>
+      <div id="desc1" class="description-boxG text-info">
+        Kenyan chapati is a soft, rich-flavored unleavened flatbread, served with stews, curries, or as a wrap sandwiches.
+      </div>
+    </div>
+
+    <!-- Choma with Kachumbari -->
+    <div class="col image-itemG">
+        <img src="choma kachumbari.jpg" alt="Choma with Kachumbari" onclick="toggleDescription('desc4')">
+      <div class="captionG fw-bold mt-2">Choma with Kachumbari</div>
+	  <div id="desc4" class="description-boxG text-warning">
+	  Grilled or barbecued meat, traditionally goat or beef which is seasoned then served with salt, chipped tomatoes, pepper,
+	  a marinade of onions, garlic and ginger
+	 
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+<script>
+  function toggleDescription(id) {
+    const element = document.getElementById(id);
+    element.style.display = (element.style.display === "none" || element.style.display === "") ? "block" : "none";
+  }
+</script>
+
+
+  
+  <div class="container mt-5">
+    <h7>Welcome to the Culinary Lottery!</h7>
+    <p>Spin to win culinary prizes!</p>
+
+    <div class="wheel-containerG">
+      <div class="wheelG">
+        <!-- The arrow pointing to the prize at the center -->
+        <div class="arrowG">↑</div>
+      </div>
+    </div>
+
+    <button id="ButtonG" onclick="spinLottery()">Spin to Win!</button>
+    <div id="resultG"></div>
+  </div>
+
+  <!-- jQuery and Bootstrap 5 JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS Script for spinning the wheel -->
+  <script>
+    function spinLottery() {
+      const wheel = document.querySelector('.wheelG');
+      const resultElement = document.getElementById("resultG");
+
+      // Simulate a spin and return a random result
+      const sections = ['Just Try Again', 'Sorry Try Again','Come for Tea Next Time','Lost', 'Won A Chocolate',
+	  'Try Again',' Did Get Any Prize','Try another Luck'];
+      const randomIndex = Math.floor(Math.random() * sections.length);
+      const result = sections[randomIndex];
+
+      // Calculate a random rotation between 1080 and 1440 degrees (multiple full rotations)
+      const spinDegrees = Math.floor(Math.random() * 360) + 1080;
+
+      // Apply rotation to the wheel with a smooth transition
+      wheel.style.transition = "transform 4s ease-out";  // Make sure the transition is smooth
+      wheel.style.transform = `rotate(${spinDegrees}deg)`;
+
+      // After the spin, show the result after a delay (4 seconds to match the animation time)
+      setTimeout(function() {
+        resultElement.innerHTML = "You : " + result;
+      }, 8000); // Delay to match the spin time
+    }
+  </script>
+	<footer class="footerG">
+        <p>&copy;<b>Indian Kenyan Culinary</b>|<i>2025 Kenyan Cuisine|All rights reserved</i>.</p>
+    </footer>
+	<script type="text/javascript" src="CE.js"> </script>
+		</body>
+	</html>

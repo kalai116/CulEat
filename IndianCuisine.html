@@ -1,0 +1,212 @@
+<!Doctype HTML>
+
+<html lang="en">
+	<head> 
+		<title> Culinary Eatery </title>
+		<link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="foodss.css">
+		<link rel="stylesheet" href="CE.js">
+		<link rel="bootstrap" href="bootstrap.css">
+		<link rel="bootstrapbundle" href="bootstrap.bundle.js">
+		<meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+	</head>
+	<body>
+
+		<div class = "logo">
+			<a href="index.html">
+				<img src="food logo.jpeg" alt="logo">
+			</a>
+			</div>
+
+		<h1> Culinary Eatery </h1>
+		<h2> Indulge in the Art of Fresh, Flavourful Cuisine </h2>
+
+		<hr class="CE">
+
+		<p1> 
+			<ul class="nav">
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link Home" aria-current="page" href="index.html"> Home </a>
+						</div>
+					</nav>
+				</li>
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="IndianCuisine.html">Indian Cuisine</a>
+						</div>
+					</nav>
+				</li>
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="IndianDessert.html">Indian Dessert</a>
+						</div>
+					</nav>
+				</li>
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="KenyaCuisine.html">Kenyan Cuisine</a>
+						</div>
+					</nav>
+				</li>	
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="AboutUs.html">About Us</a>
+						</div>
+					</nav>
+				</li>
+				<li class="nav-item">
+					<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+						<div class="container-fluid">
+							<a class="nav-link" href="OrderNow.html">Order Now</a>
+						</div>
+					</nav>
+				</li>
+			</ul>
+		</p1>
+
+<! generating clickable image to show description..>
+
+<div class="IC">
+	<div class="food1">
+
+	<! onclick feature to make the image clickable>
+		<div id="info1" onclick="description()">
+			<img src="Biryani.jpeg" alt="Biryani">
+		</div>
+
+	<! image caption and hidden image description..>
+		<figure>
+			<figcaption> <b> €15 Biryani </b> </figcaption>
+				<div id="description" style="display:none;">
+					<p> 
+						Fluffy basmati rice layered over tender & succulent pieces of meat, accompanied with the mesmerizing aromas of spices, herbs & caramelized onions 
+					</p>
+				</div> <! closing desc div...>
+		</figure>
+	</div> <! closing food1 div...>
+
+<! JS for toggling description visibility... >
+
+<script type="text/javascript">
+function description()
+	{
+	var desc = document.getElementById("description");
+		if(desc.style.display === "none"){ 
+			desc.style.display = "block";
+		} else{
+			desc.style.display = "none";
+		}
+	}
+</script>
+
+	<div class="food2">	
+
+		<div id="info2" onclick="description2()">
+			<img src="Idli.jpeg" alt="Idli">
+		</div> 
+		<figure> 
+			<figcaption> <b> €10 Idli and Chutney </b> </figcaption>
+				<div id="description2" style="display:none;">
+					<p>
+						Idli is a soft, fluffy, steamed cake made from fermented rice and black lentil batter, Coconut chutney is a traditional South Indian condiment made by blending fresh coconut meat with chillies, cumin, ginger and salt
+					</p>
+				</div>
+		</figure>
+	</div>
+
+<!JS for toggling description visibility...>
+<script type="text/javascript">
+function description2()
+	{
+	var desc2 = document.getElementById("description2");
+		if(desc2.style.display === "none"){ 
+			desc2.style.display = "block";
+		} else{
+			desc2.style.display = "none";
+		}
+	}
+</script>
+
+	<div class="food3"> 
+
+		<div id="info3" onclick="description3()">
+			<img src="VegMeal.jpeg" class="img-fluid" alt="VegMeal">
+		</div>
+
+		<figure>
+			<figcaption> <b> €12 Authentic South Indian Veg meal </b> </figcaption>
+				<div id="description3" style="display:none;">
+					<p>
+						Rice, dal, curried vegetables, chutney, pickles, papad and a sweet dish to finish the meal
+					</p>
+				</div>
+		</figure>
+	</div>
+
+<script type="text/javascript">
+function description3()
+	{
+	var desc3 = document.getElementById("description3");
+		if(desc3.style.display === "none"){ 
+			desc3.style.display = "block";
+		} else{
+			desc3.style.display = "none";
+		}
+	}
+</script>
+
+	<div class="food4">
+		<div id="info4" onclick="description4()">
+			<img src="NaanBC.jpeg" class="img-fluid" alt="NaanBC">
+		</div>
+
+		<figure>
+			<figcaption> <b> €25 Butter Naan with Butter Chicken </b> </figcaption>
+				<div id="description4" style="display:none;">
+					<p>
+						Butter Chicken is a classic Indian dish made with marinated & grilled chicken (Tandoori chicken), simmered in a creamy tomato gravy/curry.
+						Naan is a leavened flatbread cooked in a tandoor (clay oven)
+					</p>
+				</div>
+		</figure>
+	</div>
+
+
+<script type="text/javascript">
+function description4()
+	{
+	var desc4 = document.getElementById("description4");
+		if(desc4.style.display === "none"){ 
+			desc4.style.display = "block";
+		} else{
+			desc4.style.display = "none";
+		}
+	}
+</script>
+
+</div>
+
+<hr class="CEbottom">
+<footer>
+
+<p> Copyright &copy; 2025 Culinary Eatery, All Rights Reserved - Privacy Policy </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script type="text/javascript" src="CE.js"> </script>
+
+</body>
+
+
+</html>
